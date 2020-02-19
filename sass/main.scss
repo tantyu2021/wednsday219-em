@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap');
+
+$mainColor:#999;
+$bodyText:#000;
+$fontWeight:(
+    'rg':400,
+    'md':600,
+    'bold':900
+);
+$fontFamily: 'Roboto', sans-serif;
+$margin: 0 auto; 
+
+body {
+    background: $mainColor;
+    color: $bodyText;
+    font-weight: map-get($fontWeight, med);
+}
+header {
+    background-color: $bodyText;
+    color: $mainColor;
+}
+main {
+    width: 80%;
+    margin: $margin;
+}
