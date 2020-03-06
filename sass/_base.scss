@@ -1,0 +1,29 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    font-family: $font-body; //'Hepta Slab', sans-serif; 
+    color: $text-color; 
+    background-color:  $background; 
+  }
+  
+  //create list of values for looping through lists with @for
+  $heading-colors: $blue, $purple, $green, $red, $red, $orange, $yellow;
+
+  h1, h2, h3, h4, h5, h6 {
+      font-family: $font-headings; //'Oswald', sans-serif;
+  }
+//looping through the list. # represents the item
+@for $item from 1 through length($heading-colors) {
+  h#{$item} {
+    color: nth($heading-colors, $item);
+  }
+}
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }

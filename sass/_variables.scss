@@ -1,0 +1,54 @@
+//LOAD FONTS
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab|Oswald&display=swap');
+
+//creating variables
+$background:  #EEE8D6;
+$text-color:  #022933; 
+$darkblue:    #001e25;
+$red:         #D14348; 
+$blue:        #0076A3;
+$green:       #548C27;
+$purple:      #6D73C2;
+$orange:      #F39856;
+$yellow:      #FFBA00; 
+
+
+$mainColor:#999;
+
+//for fonts
+$font-body: 'Hepta Slab'; 
+$font-headings: Oswald, helvetica, sans-serif; //create a list
+
+$bodyText:#000;
+$fontWeight:(
+    'rg':400,
+    'md':600,
+    'bold':900
+);
+$fontFamily: 'Roboto', sans-serif;
+ 
+$margin: 0 auto;
+// COLORS for MEDIA
+$color-item-border: $red;
+$color-media-head: $blue;
+
+
+
+
+
+
+
+body {
+    background: $mainColor;
+    color: $bodyText;
+    font-weight: map-get($fontWeight, med);
+}
+header {
+    background-color: $bodyText;
+    color: $mainColor;
+}
+main {
+    width: 80%;
+    margin: $margin;
+}
