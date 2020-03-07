@@ -499,19 +499,41 @@ h7 {
 
 .jumbotron {
   margin-top: 0;
-  background: url("../images/pier.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))), url("../images/doric-order.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("../images/doric-order.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   height: 400px;
 }
 
-.bridge {
-  background: url("../images/bridge.jpg");
+.giant {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))), url("../images/giants.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("../images/giants.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   height: 300px;
+}
+
+.jumpMedia {
+  margin-top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))), url("../images/media.png");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("../images/media.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+}
+
+.tableTrail {
+  margin-top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))), url("../images/trail.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("../images/trail.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
 }
 
 .media {
@@ -625,7 +647,7 @@ nav .branding {
   display: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   nav .branding {
     display: block;
   }
@@ -669,6 +691,7 @@ nav ul li a {
   padding: 10px 5px;
   color: #EEE8D6;
   font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 nav ul li a:hover {

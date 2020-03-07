@@ -1,26 +1,21 @@
-//3-
+
 header, footer  {
     background-color: darken($blue, 15%);
 }
-//2- header .container {
-//         width: 100%;
-// }
 
 footer .container {
     margin: 0; //make fnav center
 }
+
 nav {
     header & {
         background-color: darken($blue, 15%);
     }
 
-//1-    .container {
-//        width: 100%;
-//    }
     .branding {
         float: left;
-        display: none; // create media query/ see _mixins - break
-        @include break(1000px) {
+        display: none; // media query/_mixins
+        @include break(900px) {
             display: block;
         }
     }
@@ -38,12 +33,11 @@ nav {
         @include clearfix;
     }
 
-     // create media query/ see _mixins - break
+     // media query/_mixins - break
     ul li {
         @include break(760px) {
             float: right;
         }
-       // float: right;
         padding: 10px 5px;
     }
 
@@ -53,7 +47,7 @@ nav {
         padding: 10px 5px;
         color: $background;
         font-family: $fontFamily;
-       
+        font-weight: 500;
 
         &:hover {
             color: $yellow;
@@ -66,12 +60,16 @@ nav {
             color: white;
         }
     }
-footer & {
-    @include break(0, 500px) {
-        display: none;
+
+    footer & {
+        @include break(0, 500px) {
+            display: none;
+        }
+        margin-top: 20px;
+        min-height: 200px;
+        background-color: darken($blue, 15%);
     }
-    margin-top: 20px;
-    min-height: 200px;
-    background-color: darken($blue, 15%);
-}    
 }
+
+
+

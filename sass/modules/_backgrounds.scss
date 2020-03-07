@@ -25,9 +25,17 @@
 } 
 .jumbotron {
     margin-top: 0; //fix gap btwn img, nav
-    @include backimage('../images/pier.jpg');  
+    @include backimage('../images/doric-order.jpg');  
 }
-//finally remove , 500; was value -height: 500px; - remove and put as an parameter; was before-background: $blue;
-.bridge {
-    @include backimage('../images/bridge.jpg', 300px);  //default in mixins 500px
+//can be color-background: $blue;
+.giant {
+    @include backimage('../images/giants.jpg', 300px);  
+}
+.jumpMedia {
+    margin-top: 0; //fix gap btwn img, nav
+    @include backimage('../images/media.png');  
+}
+.tableTrail {
+    margin-top: 0; //fix gap btwn img, nav
+    @include backimage('../images/trail.jpg');  
 }
