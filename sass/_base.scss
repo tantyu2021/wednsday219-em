@@ -62,3 +62,34 @@ html {
 }
 
 
+
+//for buttons: 
+$color-btn-text: $darkblue;
+
+%btn {     //with % create a Shadow class
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-family: $font-headings;
+    user-select: none;
+    color: $background; //$text-color;
+}
+//creating maps in Sass(arrays)
+$color-btns:( 
+    default: $text-color,
+    hot: $red,
+    cool: $blue,
+    purple: $purple
+    ) ;
+
+@each $name, $value in $color-btns {
+    .btn-#{$name} {
+        @extend %btn;
+        background-color: $value;
+    }
+}

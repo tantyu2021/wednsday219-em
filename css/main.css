@@ -470,6 +470,39 @@ h7 {
   }
 }
 
+.btn-default, .btn-hot, .btn-cool, .btn-purple {
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-family: Oswald, helvetica, sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #EEE8D6;
+}
+
+.btn-default {
+  background-color: #022933;
+}
+
+.btn-hot {
+  background-color: #D14348;
+}
+
+.btn-cool {
+  background-color: #0076A3;
+}
+
+.btn-purple {
+  background-color: #6D73C2;
+}
+
 .background {
   color: #EEE8D6;
   margin: 20px 0;
@@ -550,7 +583,7 @@ h7 {
 }
 
 .media .item:hover {
-  background: #FFBA00;
+  background: rgba(255, 186, 0, 0.2);
 }
 
 .media .item:last-of-type {
@@ -708,7 +741,7 @@ footer nav ul li a {
 
 footer nav {
   margin-top: 20px;
-  min-height: 200px;
+  min-height: 10px;
   background-color: #003f57;
 }
 

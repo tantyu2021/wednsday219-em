@@ -10,7 +10,7 @@
         padding-left: 10px;
         padding-bottom: 10px;
         &:hover {
-            background: $yellow;
+            background: transparentize($yellow, .8); //transparentize($yellow, .8);
         }
         &:last-of-type {
             border-bottom: 1px dotted $color-item-border;
@@ -22,7 +22,7 @@
         padding: 0;
         color: $color-media-head;
         font-size: 2rem;
-        #typography & {  //# - if
+        #typography & { 
 color: $red;
         }
     }
