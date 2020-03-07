@@ -1,20 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Hepta+Slab|Oswald&display=swap");
-body {
-  background: #999;
-  color: #000;
-}
-
-header {
-  background-color: #000;
-  color: #999;
-}
-
-main {
-  width: 80%;
-  margin: 0 auto;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -408,6 +393,83 @@ h7 {
   margin: 0 auto;
 }
 
+.grid {
+  margin-bottom: 10px;
+}
+
+.grid:before, .grid:after {
+  content: '';
+  display: table;
+}
+
+.grid:after {
+  clear: both;
+}
+
+.grid .item {
+  float: left;
+  width: 49%;
+}
+
+.grid .item:nth-child(n) {
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+
+.grid .item:nth-child(2n) {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.grid img {
+  display: block;
+  border-radius: 40px 0px 40px 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 550px) {
+  .grid .item {
+    width: 32%;
+  }
+  .grid .item:nth-child(n) {
+    margin-bottom: 2%;
+    margin-right: 2%;
+  }
+  .grid .item:nth-child(3n) {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 550px) and (min-width: 860px) {
+  .grid .item {
+    width: 23.5%;
+  }
+  .grid .item:nth-child(n) {
+    margin-bottom: 2%;
+    margin-right: 2%;
+  }
+  .grid .item:nth-child(4n) {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 550px) and (min-width: 1000px) {
+  .grid .item {
+    width: 18.4%;
+  }
+  .grid .item:nth-child(n) {
+    margin-bottom: 2%;
+    margin-right: 2%;
+  }
+  .grid .item:nth-child(5n) {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
 .background {
   color: #EEE8D6;
   margin: 20px 0;
@@ -441,7 +503,7 @@ h7 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 500px;
+  height: 400px;
 }
 
 .bridge {
@@ -511,44 +573,38 @@ h7 {
 
 .table {
   border-collapse: collapse;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: left;
   width: 100%;
 }
 
-.table caption {
-  font-size: 2.5rem;
-  text-align: left;
-  padding-bottom: 5px;
-}
-
 .table > thead > tr:hover, .table > tbody > tr:hover, .table > tfoot > tr:hover {
-  background-color: #dfc5b2;
+  background-color: rgba(255, 186, 0, 0.2);
 }
 
 .table > thead > tr:nth-child(even), .table > tbody > tr:nth-child(even), .table > tfoot > tr:nth-child(even) {
-  background-color: rgba(255, 186, 0, 0.3);
+  background-color: rgba(84, 140, 39, 0.2);
 }
 
 .table > thead > tr:nth-child(even):hover, .table > tbody > tr:nth-child(even):hover, .table > tfoot > tr:nth-child(even):hover {
-  background-color: rgba(255, 186, 0, 0.3);
+  background-color: rgba(84, 140, 39, 0.3);
 }
 
 .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
   padding: 10px;
-  border-bottom: 1px dotted #0076A3;
+  border-bottom: 1px dotted #548C27;
 }
 
-> thead, > tr {
-  background-color: #0076A3;
+.table > thead, .table > tr {
+  background-color: rgba(209, 67, 72, 0.6);
   color: #EEE8D6;
 }
 
-> thead:hover, > tr:hover {
-  background-color: compliment(#0076A3);
+.table > thead:hover, .table > tr:hover {
+  background-color: rgba(0, 118, 163, 0.2);
 }
 
-> thead > th, > tr > th {
+.table > thead > th, .table > tr > th {
   border-bottom: 0;
 }
 
@@ -608,7 +664,7 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 1.3rem;
+  font-size: 2rem;
   text-decoration: none;
   padding: 10px 5px;
   color: #EEE8D6;

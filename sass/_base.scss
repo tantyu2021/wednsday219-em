@@ -17,8 +17,7 @@ html {
   h1, h2, h3, h4, h5, h6 {
       font-family: $font-headings; //'Oswald', sans-serif;
   }
-//looping through the list. # represents the item
-@for $item from 1 through length($heading-colors) {
+@for $item from 1 through length($heading-colors) {  //looping through the list. # represents the item
   h#{$item} {
     color: nth($heading-colors, $item);
   }
@@ -27,3 +26,39 @@ html {
     width: 80%;
     margin: 0 auto;
   }
+
+
+  $roundness: 40px 0px 40px 0px; //list
+
+  //from _mixins.scss- math operation(for imgs),media query- break
+  .grid {
+    margin-bottom: 10px;
+    @include clearfix;
+    .item {
+        float: left;
+        @include imageGrid(2, 2%);
+    }
+    img {
+        display: block;
+        border-radius: $roundness;//nth($roundness, 1);//show - for 1 type //$roundness//10px 0px 10px 0px;
+        max-width: 100%;
+        height: auto;
+    }
+    @include break(550px) {
+      .item {
+        @include imageGrid(3, 2%);
+    }
+    @include break(860px) {
+      .item {
+        @include imageGrid(4, 2%);
+    }
+    }
+    @include break(1000px) {
+      .item {
+        @include imageGrid(5, 2%);
+    }
+    }
+  }
+}
+
+

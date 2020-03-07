@@ -1,4 +1,4 @@
-@mixin backimage($image, $height: 500px) { //100vh -viewport height
+@mixin backimage($image, $height: 400px) { //100vh -viewport height
     background: url($image);
     background-repeat: no-repeat;
     background-position: center center;
@@ -17,6 +17,7 @@
     }
 }
 
+//Math operation
 @mixin imageGrid($qty, $margin) {
     width: ((100% - (($qty - 1) * $margin )) / $qty);
     &:nth-child(n) {

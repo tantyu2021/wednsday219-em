@@ -33,22 +33,3 @@ $margin: 0 auto;
 $color-item-border: $red;
 $color-media-head: $blue;
 
-
-
-
-
-
-
-body {
-    background: $mainColor;
-    color: $bodyText;
-    font-weight: map-get($fontWeight, med);
-}
-header {
-    background-color: $bodyText;
-    color: $mainColor;
-}
-main {
-    width: 80%;
-    margin: $margin;
-}
